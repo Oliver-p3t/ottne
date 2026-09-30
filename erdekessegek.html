@@ -12,6 +12,47 @@
             font-family: Arial, sans-serif;
         }
 
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .kezdolap {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .kezdolap a, .menu a {
+            background-color: #f08080;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 3px;
+            font-size: 14px;
+        }
+
+        .menu a:hover {
+            background-color: #d95f5f;
+        }
+
+        .menu .aktiv {
+            padding: 13px 18px;
+            font-size: 16px;
+        }
+
         .cim {
             background-color: #f08080;
             color: white;
@@ -22,37 +63,97 @@
             margin: 20px auto;
         }
 
-        .menu {
-            position: absolute;
-            top: 15px;
-            left: 15px;
+        .tartalom {
+            width: 85%;
+            margin: auto;
         }
 
-        .menu a {
-            display: block;
-            background-color: #f08080;
-            color: white;
-            padding: 10px 12px;
-            width: 80px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
+        h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+        p {
+            font-size: 15px;
+            line-height: 1.5;
         }
 
-        .menu a:hover {
-            background-color: #d95f5f;
+        ul {
+            font-size: 15px;
+            line-height: 1.8;
         }
     </style>
+
 </head>
 
 <body>
 
-    <div class="menu">
+    <div class="kezdolap">
         <a href="kezdolap.html">Kezdőlap</a>
     </div>
 
-    <h1 class="cim">Érdekességek</h1>
+    <div class="menu">
+        <a href="kutyafajtak.html">Kutyafajták</a>
+        <a href="etetes.html">Etetés</a>
+        <a href="gondozas.html">Gondozás</a>
+        <a href="erdekessegek.html" class="aktiv">Érdekességek</a>
+    </div>
+
+   
+
+    <div class="tartalom">
+
+        <h3>Kutyák és emberek</h3>
+
+        <p>
+            A kutyák évezredek óta fontos szerepet töltenek be az emberek életében.
+            Sokan társállatként tartják őket, de különböző feladatokban is segíthetnek.
+        </p>
+
+        <p>A kutyák lehetnek például:</p>
+
+        <ul>
+            <li>Társállatok</li>
+            <li>Segítő kutyák</li>
+            <li>Terápiás kutyák</li>
+            <li>Keresőkutyák</li>
+            <li>Mentőkutyák</li>
+            <li>Rendőrkutyák</li>
+        </ul>
+
+        <p>
+            Kiváló szaglásuk és tanulási képességük miatt sok olyan munkát is el
+            tudnak végezni, amelyben az embereknek segítségre van szükségük.<br>
+            További érdekességeket <a href="https://atomzsir.hu/cikkek-blog/10-erdekesseg-a-kutyakrol-amirol-nem-tudtal?srsltid=AU7gw4Uf5r3tvsf5pYx7exvyug5-OSW_RP-VBxklgHmSlnGZBHvQBJDr">itt</a> olvashatsz.
+        </p>
+        
+
+        <h3>Kutyás rekordok</h3>
+
+        <p>
+            A kutyafajták között hatalmas különbségek vannak méretben, gyorsaságban
+            és képességekben.
+        </p>
+
+        <ul>
+            <li>Legkisebb: csivava</li>
+            <li>Legnagyobb: német dog</li>
+            <li>Leggyorsabb: angol agár</li>
+            <li>Intelligens fajták: border collie, pudli</li>
+            <li>Hosszú életű fajták: csivava, tacskó</li>
+        </ul>
+
+        <p>
+            Ezek jól mutatják, hogy a kutyák mennyire változatosak lehetnek
+            méretükben és képességeikben.
+        </p>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Kutyaoldal</p>
+    </footer>
 
 </body>
 

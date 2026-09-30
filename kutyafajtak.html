@@ -11,7 +11,28 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
-
+        footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .kezdolap {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.kezdolap a {
+    display: block;
+    background-color: #f08080;
+    color: white;
+    padding: 10px 12px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
         .cim {
             background-color: #f08080;
             color: white;
@@ -23,75 +44,85 @@
         }
 
         .menu {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-        }
+    text-align: center;
+    margin-top: 15px;
+}
 
-        .menu a {
-            display: block;
-            background-color: #f08080;
-            color: white;
-            padding: 10px 12px;
-            width: 80px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-        }
+.menu a {
+    display: inline-block;
+    background-color: #f08080;
+    color: white;
+    padding: 10px 15px;
+    margin: 3px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
-        .menu a:hover {
-            background-color: #d95f5f;
-        }
-        img {
-        margin-left: 20px;
-    }
+.menu a:hover {
+    background-color: #d95f5f;
+}
+
+.menu a.aktiv {
+    padding: 13px 18px;
+    font-size: 16px;
+}
+    
     </style>
 </head>
 
 <body>
 
+    <div class="kezdolap">
+    <a href="kezdolap.html">Kezdőlap</a>
+</div>
     <div class="menu">
-        <a href="kezdolap.html">Kezdőlap</a>
-    </div>
+    <a href="kutyafajtak.html" class="aktiv">Kutyafajták</a>
+    <a href="etetes.html">Etetés</a>
+    <a href="gondozas.html">Gondozás</a>
+    <a href="erdekessegek.html">Érdekességek</a>
+</div>
 
-    <h1 class="cim">Kutyafajták</h1>
+    
     <h2>Kuvasz</h2>
     <p>
-        A kuvasz egy nagy termetű, fehér színű kutyafajta.
+        A kuvasz egy nagy termetű, fehér színű kutyafajta.<br>
         Hűséges, bátor és emellett kiváló házőrző is, de szigorú nevelésre van szüksége.
     </p>
     <img src="kuvasz.jpg" alt="Kuvasz" width="400">
 
     <h2>Vizsla</h2>
     <p>
-        A vizsla egy közepes termetű, rövid szőrű kutyafajta.
+        A vizsla egy közepes termetű, rövid szőrű kutyafajta.<br>
         Barátságos, intelligens és nagyon mozgékony, emiatt sokat kell vele sétálni, parkokba járni.
     </p>
     <img src="vizsla.jpg" alt="Vizsla" width="400">
 
     <h2>Német juhászkutya</h2>
     <p>
-        A német juhászkutya egy erős, intelligens és könnyen tanítható kutyafajta.
+        A német juhászkutya egy erős, intelligens és könnyen tanítható kutyafajta.<br>
         Gyakran használják rendőrségi és mentési feladatokra, de családi kutyának is tökéletes lehet.
     </p>
     <img src="nemetjuhasz.jpg" alt="Német juhászkutya" width="400">
 
     <h2>Tacskó</h2>
     <p>
-        A tacskó kis termetű, hosszú testű és rövid lábú kutyafajta.
+        A tacskó kis termetű, hosszú testű és rövid lábú kutyafajta.<br>
         Élénk, bátor és kíváncsi, ezért sokszor nagyon határozott természetű.
     </p>
     <img src="tacsko.avif" alt="Tacskó" width="400">
 
     <h2>Angol bulldog</h2>
     <p>
-        Az angol bulldog zömök testalkatú, erős és jellegzetes megjelenésű kutya.
+        Az angol bulldog zömök testalkatú, erős és jellegzetes megjelenésű kutya.<br>
         Általában nyugodt és barátságos, de a meleg időt nehezen viseli.
     </p>
     <img src="angolbulldog.jpg" alt="Angol bulldog" width="400">
 
-
+<footer>
+  <p>© 2026 Kutyaoldal</p>
+</footer>
 </body>
 
 </html>

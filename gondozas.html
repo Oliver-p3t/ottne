@@ -12,6 +12,47 @@
             font-family: Arial, sans-serif;
         }
 
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .kezdolap {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .kezdolap a, .menu a {
+            background-color: #f08080;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 3px;
+            font-size: 14px;
+        }
+
+        .menu a:hover {
+            background-color: #d95f5f;
+        }
+
+        .menu .aktiv {
+            padding: 13px 18px;
+            font-size: 16px;
+        }
+
         .cim {
             background-color: #f08080;
             color: white;
@@ -22,37 +63,95 @@
             margin: 20px auto;
         }
 
-        .menu {
-            position: absolute;
-            top: 15px;
-            left: 15px;
+        .gondozas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
 
-        .menu a {
-            display: block;
-            background-color: #f08080;
-            color: white;
-            padding: 10px 12px;
-            width: 80px;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        .menu a:hover {
-            background-color: #d95f5f;
+        .gondozas-elem img {
+            width: 250px;
+            height: 180px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="menu">
+    <div class="kezdolap">
         <a href="kezdolap.html">Kezdőlap</a>
     </div>
 
-    <h1 class="cim">Gondozás</h1>
+    <div class="menu">
+        <a href="kutyafajtak.html">Kutyafajták</a>
+        <a href="etetes.html">Etetés</a>
+        <a href="gondozas.html" class="aktiv">Gondozás</a>
+        <a href="erdekessegek.html">Érdekességek</a>
+    </div>
+
+    <p>
+        A kutya gondozása nemcsak etetésből és sétáltatásból áll.
+        A megfelelő táplálás, mozgás, higiénia és szeretetteljes törődés
+        mind fontos ahhoz, hogy kedvencünk egészséges és boldog legyen.
+    </p>
+
+    <h2>A kutya gondozásának legfontosabb lépései</h2>
+
+    <div class="gondozas">
+
+        <div class="gondozas-elem">
+            <strong>1. Megfelelő táplálás</strong>
+            <p>
+                Adj a kutyának korának, méretének és igényeinek megfelelő táplálékot.
+            </p>
+            <img src="etetes.jpg" alt="Kutya etetése">
+        </div>
+
+        <div class="gondozas-elem">
+            <strong>2. Rendszeres mozgás</strong>
+            <p>
+                A napi séta és játék fontos a kutya testi és lelki egészségéhez.
+            </p>
+            <img src="setalas.jpg" alt="Kutya sétáltatása">
+        </div>
+
+        <div class="gondozas-elem">
+            <strong>3. Szőrápolás</strong>
+            <p>
+                Rendszeresen fésüld meg a kutyát, és szükség esetén fürdesd meg.
+            </p>
+            <img src="fesules.jpg" alt="Kutya szőrápolása">
+        </div>
+
+        <div class="gondozas-elem">
+            <strong>4. Fog- és karomápolás</strong>
+            <p>
+                Figyelj a kutya fogainak és karmainak megfelelő ápolására.
+            </p>
+            <img src="koromvagas.jpg" alt="Kutya ápolása">
+        </div>
+
+        <div class="gondozas-elem">
+            <strong>5. Állatorvosi ellenőrzés</strong>
+            <p>
+                A rendszeres állatorvosi vizsgálatok segíthetnek megőrizni a kutya egészségét.
+            </p>
+            <img src="orvos.jpg" alt="Kutya az állatorvosnál">
+        </div>
+
+        <div class="gondozas-elem">
+            <strong>6. Szeretet és figyelem</strong>
+            <p>
+                A közös játék, tanítás és törődés hozzájárul ahhoz, hogy a kutya boldog legyen.
+            </p>
+            <img src="jatek.jpg" alt="Játék a kutyával">
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Kutyaoldal</p>
+    </footer>
 
 </body>
 

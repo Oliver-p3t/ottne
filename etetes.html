@@ -12,87 +12,183 @@
             font-family: Arial, sans-serif;
         }
 
-        .cim {
-            background-color: #f08080;
-            color: white;
-            padding: 15px 30px;
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             text-align: center;
-            border-radius: 10px;
-            width: fit-content;
-            margin: 20px auto;
         }
 
-        .menu {
+        .kezdolap {
             position: absolute;
             top: 15px;
             left: 15px;
         }
 
-        .menu a {
-            display: block;
+        .kezdolap a, .menu a {
             background-color: #f08080;
             color: white;
-            padding: 10px 12px;
-            width: 80px;
-            text-align: center;
+            padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 3px;
             font-size: 14px;
         }
 
         .menu a:hover {
             background-color: #d95f5f;
         }
+
+        .menu .aktiv {
+            padding: 13px 18px;
+            font-size: 16px;
+        }
+
+        .cim {
+            background-color: #f08080;
+            color: white;
+            padding: 12px 25px;
+            text-align: center;
+            border-radius: 10px;
+            width: fit-content;
+            margin: 25px auto;
+        }
+
+        .tartalom {
+            width: 85%;
+            margin: auto;
+        }
+table {
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 6px 10px;
+}
+
+th {
+    background-color: transparent;
+    color: black;
+}
+        tr:nth-child(even) {
+            background-color: #fff1d0;
+        }
+
+        .kep {
+            display: block;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .link {
+            color: #d95f5f;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="menu">
+    <div class="kezdolap">
         <a href="kezdolap.html">Kezdőlap</a>
     </div>
 
-    <h1 class="cim">Etetés</h1>
-    
-    <h1>Kutyafajták etetése</h1>
+    <div class="menu">
+        <a href="kutyafajtak.html">Kutyafajták</a>
+        <a href="etetes.html" class="aktiv">Etetés</a>
+        <a href="gondozas.html">Gondozás</a>
+        <a href="erdekessegek.html">Érdekességek</a>
+    </div>
 
-    <h2>Kuvasz etetése</h2>
-    <p>
-        A kuvasz nagytestű kutya, ezért megfelelő mennyiségű és jó minőségű táplálékra van szüksége.
-        Fontos, hogy az adagokat a korához, méretéhez és mozgásigényéhez igazítsuk.
-    </p>
-    <img src="kuvasz-etetes.jpg" alt="Kuvasz etetése" width="400">
+    <div class="tartalom">
 
-    <h2>Vizsla etetése</h2>
-    <p>
-        A vizsla aktív és mozgékony kutya, ezért táplálékának elegendő energiát kell biztosítania.
-        Érdemes jó minőségű, kiegyensúlyozott eledelt választani számára.
-    </p>
-    <img src="vizsla-etetes.jpg" alt="Vizsla etetése" width="400">
+        <p>
+            A kutyák etetésénél fontos, hogy életkoruknak, méretüknek
+            és aktivitásuknak megfelelő táplálékot kapjanak.
+        </p>
 
-    <h2>Német juhászkutya etetése</h2>
-    <p>
-        A német juhászkutyának a nagy mozgásigénye miatt megfelelően összeállított étrendre van szüksége.
-        Fontos a megfelelő adagolás, hogy elkerüljük a túletetést és a túlzott súlygyarapodást.
-    </p>
-    <img src="nemetjuhasz-etetes.jpg" alt="Német juhászkutya etetése" width="400">
+        <p>
+            A kiegyensúlyozott étrend tartalmazza a szükséges fehérjéket,
+            zsírokat, szénhidrátokat, vitaminokat és ásványi anyagokat.
+        </p>
 
-    <h2>Tacskó etetése</h2>
-    <p>
-        A tacskónál különösen fontos a megfelelő mennyiségű étel, mert a túlsúly megterhelheti a hosszú hátát.
-        Ezért érdemes az adagokat pontosan kimérni és a jutalomfalatokat is beleszámítani a napi táplálékba.
-    </p>
-    <img src="tacsko-etetes.jpg" alt="Tacskó etetése" width="400">
+        <table>
+            <tr>
+                <th>Életkor</th>
+                <th>Etetés</th>
+                <th>Tudnivaló</th>
+            </tr>
 
-    <h2>Angol bulldog etetése</h2>
-    <p>
-        Az angol bulldog hajlamos lehet a túlsúlyra, ezért fontos a megfelelő adagolás.
-        Kiegyensúlyozott étrendre és mindig friss ivóvízre van szüksége.
-    </p>
-    <img src="angol-bulldog-etetes.jpg" alt="Angol bulldog etetése" width="400">
+            <tr>
+                <td>0–3 hetes</td>
+                <td>4–6×</td>
+                <td>Anyatej vagy tejpótló</td>
+            </tr>
 
-</body>
-    
+            <tr>
+                <td>3–8 hetes</td>
+                <td>4–5×</td>
+                <td>Pépes kölyöktáp</td>
+            </tr>
+
+            <tr>
+                <td>2–6 hónapos</td>
+                <td>3–4×</td>
+                <td>Kölyökeledel</td>
+            </tr>
+
+            <tr>
+                <td>6–12 hónapos</td>
+                <td>2–3×</td>
+                <td>Átállás felnőtt rendre</td>
+            </tr>
+
+            <tr>
+                <td>1–7 éves</td>
+                <td>1–2×</td>
+                <td>Felnőtt kutyaeledel</td>
+            </tr>
+
+            <tr>
+                <td>7–10 éves</td>
+                <td>1–2×</td>
+                <td>Idősebb kutyaeledel</td>
+            </tr>
+
+            <tr>
+                <td>10+ éves</td>
+                <td>1–2×</td>
+                <td>Senior kutyatáp</td>
+            </tr>
+        </table>
+
+        <p>
+            Mindig legyen a kutya előtt friss, tiszta ivóvíz.<br>
+            Az adagokat érdemes megfelelően kimérni.
+        </p>
+
+        <p>
+            Bővebben a kutyák etetéséről
+            <a class="link" href="https://szigetkoziallatorvos.hu/kutyak-etetese/">itt</a>.
+        </p>
+
+        <img class="kep" src="kutyaeszik.png" width="400">
+
+    </div>
+
+    <footer>
+        <p>© 2026 Kutyaoldal</p>
+    </footer>
 
 </body>
 
